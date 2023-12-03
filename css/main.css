@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: url(../img/v960-ning-30.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header {
+    height: 100px;
+    text-align: center;
+    align-items: center;
+    line-height: 100px;
+    background-color: #e2e4e9;
+    font-size: 3rem;
+    border-bottom: 2px solid #b0c8e4;
+    margin-bottom: 20px;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+}
+
+.navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navigation-box {
+    display: flex;
+    width: 15%;
+}
+
+.navigation-button {
+    overflow: hidden;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 3px 7px 3px 7px;
+    cursor: pointer;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #e2e4e9;
+}
+
+.navigation-button:hover {
+    background-color: #b3cbe7;
+    border: 1px dashed black;
+}
+
+.navigation-button:active {
+    background-color: #a9c5e2;
+}
+
+
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 625px;
+    background-color: #a6c0e3;
+    margin: 30px 40px 30px 40px;
+    align-items: center;
+    border: 3px solid #71a7de;
+    border-radius: 25px;
+}
+
+.product-name {
+    display: flex;
+    overflow: hidden;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-name-text {
+    text-align: center;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.product-picture {
+    width: 300px;
+    align-self: center;
+    flex: 1 1 400px;
+}
+
+.product-picture img {
+    max-width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+
+.product-price {
+    height: 50px;
+    line-height: 50px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.product-basket {
+    height: 75px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-buy {
+    cursor: pointer;
+    height: 35px;
+    background-color: #84ade0;
+    border: 2px solid black;
+    border-radius: 10px;
+    line-height: 35px;
+    padding: 0 5px 0 5px;
+}
+
+.product-buy:hover {
+    background-color: #75a4e0;
+    border: 3px solid black;
+}
+
+.product-buy:active {
+    background-color: #4789de;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+}
+
+.location-map {
+    align-self: center;
+}
+
+
+.location-header {
+    text-align: center;
+    font-size: 2rem;
+    margin: 10px 0 10px 0;
+    border-top: 5px double;
+    border-bottom: 2px solid;
+    margin: 0 0 20px 0;
+}
+
+
+iframe {
+    height: 500px;
+    width: 80vw;
+}
+
+.location-adress {
+    align-self: center;
+    min-width: max-content;
+    margin: 20px 50px 20px 50px;
+    padding: 5px 10px 5px 10px;
+    background-color: #a9c5e2;
+    border: 2px solid #4789de;
+    border-radius: 15px;
+}
+
+.location-adress-text {
+    font-size: 1.2em;
+}
+
+.footer {
+    border-top: 2px solid;
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .header {
+        height: 70px;
+        line-height: 70px;
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    .navigation {
+        flex-direction: column;
+    }
+
+    .navigation-box {
+        width: 70%;
+        font-size: 1.7em;
+        margin: 2px 0 2px 0;
+    }
+
+    iframe {
+        display: none;
+    }
+}
